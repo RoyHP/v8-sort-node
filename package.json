@@ -1,0 +1,26 @@
+{
+  "name": "v8-sort-node",
+  "version": "0.0.1",
+  "description": "Benchmarking various sort algorithms against v8's array#sort",
+  "main": "index.js",
+  "dependencies": {
+    "config": "1.21.x"
+  },
+  "devDependencies": {
+    "chai": "3.5.x",
+    "mocha": "3.1.x"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RoyHP/v8-sort-node.git"
+  },
+  "author": "Roy Hill-Percival",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RoyHP/v8-sort-node/issues"
+  },
+  "homepage": "https://github.com/RoyHP/v8-sort-node#readme"
+}
