@@ -1,4 +1,4 @@
-var heapSort = (function () {
+var heapSort = (() => {
     function heapify(array, index, heapSize) {
         var left = 2 * index + 1,
             right = 2 * index + 2,
@@ -89,13 +89,13 @@ for (i = 0; i < 100000; i++) {
 }
 console.timeEnd("generateArray")
 console.time("heapSort")
-var heapResult = heapSort(array)
+let heapResult = heapSort(array)
 console.timeEnd("heapSort")
 console.time("quickSort")
-var quickResult = quickSort(array)
+let quickResult = quickSort(array)
 console.timeEnd("quickSort")
 console.time("nativeSort")
-var nativeResult = array.sort((a, b) => {
+let nativeResult = array.sort((a, b) => {
 	return a - b
 })
 console.timeEnd("nativeSort")
